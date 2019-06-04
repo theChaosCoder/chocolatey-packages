@@ -23,7 +23,9 @@
     <bugTrackerUrl>https://github.com/brechtsanders/pedeps/issues</bugTrackerUrl>
     <tags>pedeps dependencies runtimes</tags>
     <summary>Lists dependencies (exports + symbols) of .exe and .dll files like MSVCR90.dll or VCRUNTIME140.dll.</summary>
-    <description>The pedeps Cross-platform C library provides functions to retrieve data from Windows .exe and .dll files.
+    <description>Lists dependencies (exports + symbols) of .exe and .dll files like MSVCR90.dll or VCRUNTIME140.dll.
+	
+	The pedeps Cross-platform C library provides functions to retrieve data from Windows .exe and .dll files.
 
 These files are in either PE (Windows 32-bit) or PE+ (Windows 64-bit) format, which are extensions of the COFF format.
 Currently the library allows iterating through:
