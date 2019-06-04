@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>pedeps</id>
+    <version>0.1.5</version>
+    <packageSourceUrl>https://github.com/theChaosCoder/chocolatey-packages/tree/master/automatic/pedeps</packageSourceUrl>
+    <owners>thechaoscoder</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>pedeps Cross-platform C library to read data from PE/PE+ files (the format of Windows .exe and .dll files).</title>
+    <authors>Brecht Sanders</authors>
+    <projectUrl>https://github.com/brechtsanders/pedeps</projectUrl>
+    <copyright>Copyright (c) 2019 Brecht Sanders</copyright>
+    <licenseUrl>https://github.com/brechtsanders/pedeps/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/brechtsanders/pedeps</projectSourceUrl>
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/brechtsanders/pedeps/issues</bugTrackerUrl>
+    <tags>pedeps dependencies runtimes</tags>
+    <summary>Lists dependencies (exports + symbols) of .exe and .dll files like MSVCR90.dll or VCRUNTIME140.dll.</summary>
+    <description>The pedeps C library provides functions to retrieve data from Windows .exe and .dll files.
+
+These files are in either PE (Windows 32-bit) or PE+ (Windows 64-bit) format, which are extensions of the COFF format.
+Currently the library allows iterating through:
+ - exported symbols
+ - imported symbols from dependancy .dll files</description>
+    <releaseNotes>https://github.com/brechtsanders/pedeps/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>

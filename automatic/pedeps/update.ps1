@@ -1,6 +1,13 @@
 import-module au
 
-$releases = 'https://github.com/htacg/tidy-html5/releases'
+$releases = 'https://github.com/brechtsanders/pedeps/releases'
+
+function global:au_BeforeUpdate() {
+    #Download $Latest.URL32 / $Latest.URL64 in tools directory and remove any older installers.
+    Get-RemoteFiles -Purge
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32
+    $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64
+}
 
 function global:au_SearchReplace {
     @{
@@ -14,10 +21,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    #tidy-5.1.25-win64.zip
-    $re  = "tidy-.+-win(32|64).zip"
+    #pedeps-0.1.5-win32.zip & pedeps-0.1.5-win64.zip
+    $re  = "pedeps-.+-win(32|64).zip"
     $url = $download_page.links | ? href -match $re | select -First 2 -expand href
 
     $version = $url[0] -split '-' | select -Last 1 -Skip 1
