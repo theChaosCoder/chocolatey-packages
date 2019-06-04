@@ -11,7 +11,7 @@
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>pedeps Cross-platform C library to read data from PE/PE+ files (the format of Windows .exe and .dll files).</title>
+    <title>pedeps</title>
     <authors>Brecht Sanders</authors>
     <projectUrl>https://github.com/brechtsanders/pedeps</projectUrl>
     <copyright>Copyright (c) 2019 Brecht Sanders</copyright>
@@ -23,7 +23,7 @@
     <bugTrackerUrl>https://github.com/brechtsanders/pedeps/issues</bugTrackerUrl>
     <tags>pedeps dependencies runtimes</tags>
     <summary>Lists dependencies (exports + symbols) of .exe and .dll files like MSVCR90.dll or VCRUNTIME140.dll.</summary>
-    <description>The pedeps C library provides functions to retrieve data from Windows .exe and .dll files.
+    <description>The pedeps Cross-platform C library provides functions to retrieve data from Windows .exe and .dll files.
 
 These files are in either PE (Windows 32-bit) or PE+ (Windows 64-bit) format, which are extensions of the COFF format.
 Currently the library allows iterating through:
