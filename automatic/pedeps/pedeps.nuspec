@@ -11,7 +11,7 @@
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>pedeps</title>
+    <title>pedeps - Lists dependencies of exe and dll files</title>
     <authors>Brecht Sanders</authors>
     <projectUrl>https://github.com/brechtsanders/pedeps</projectUrl>
     <copyright>Copyright (c) 2019 Brecht Sanders</copyright>
