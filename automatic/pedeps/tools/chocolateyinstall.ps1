@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://github.com/brechtsanders/pedeps/releases/download/0.1.5/pedeps-0.1.5-win32.zip'
-$url64      = 'https://github.com/brechtsanders/pedeps/releases/download/0.1.5/pedeps-0.1.5-win64.zip'
-$checksum32  = 'f61b708a27e834dc70009854a56430a7e49062f67e91d5f8bb3fe880b243e2ad'
-$checksum64  = '71ac500464ef6a06763ee5cda74c2b39504d4933267a34b8318be723a2e0f6fd'
+$url32      = 'https://github.com/brechtsanders/pedeps/releases/download/0.1.6/pedeps-0.1.6-win32.zip'
+$url64      = 'https://github.com/brechtsanders/pedeps/releases/download/0.1.6/pedeps-0.1.6-win64.zip'
+$checksum32  = '6fc9ffce94d64d91f52ed718e4004e614722c95445d85a0ac232e46f1cd7d2ed'
+$checksum64  = '16f80b8a05ee6e066a7077db6b42a947e761f5d99a3a248dcf6393c34a658c6b'
 
 
 
